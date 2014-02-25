@@ -1,0 +1,63 @@
+<h1>Hello World!</h1>
+<p>This is the time <%= @Time %></p>
+<%= link_to"Good Bye!", say_goodbye_path  %>
+
+
+<% 
+=begin 
+%>
+
+
+<% for file in @Files %>
+<ul>
+<li>This file name is: <%= file %></li>
+</ul>
+<% end %>
+
+<%
+def say_goodnight(name)
+result = "Good night, #{name.titleize}" 
+end
+%>
+<%= say_goodnight('leon melody') %> <br>
+<%= say_goodnight('margarida raimunda') %>
+
+
+<%
+a = [25, 'Cat', 4.02]
+b = ['this', 'is', 'a', 'cat']
+c = %w{ this is a dog 25 A56 }
+
+%>
+
+<br/>		<br/>
+
+<%= a[0] %> <br/> <%= a[1] %> <br/> <%= a[2] %><br/>
+
+<%= b[0] %> <%= b[1]%> <%= b[2]%> <%= b[3]%> <br/>
+
+<%= c[0] %> <%= c[1]%> <%= c[2]%> <%= c[3]%> <%= c[4]%> <%= c[5]%>
+
+
+<%
+=end
+%>
+
+
+<%= %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
